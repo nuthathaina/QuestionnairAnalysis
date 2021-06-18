@@ -36,7 +36,7 @@ git clone https://github.com/nuthathaina/QuestionnairAnalysis
 2. Open Android Studio and add QuestionnairAnalysis project
 3. Open QuestionnairAnalysis project
 
-### Directory Tree
+### Directory Structure
 ```
 QuestionnairAnalysis:.
 ├───.gradle
