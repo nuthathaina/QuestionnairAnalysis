@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg2"
+    tools:context=".ProcessActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="TextView" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btnShow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:text="Show Spinner" />-->
+<!--        <Button-->
+<!--            android:id="@+id/btnHide"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@+id/btnShow"-->
+<!--            android:layout_toRightOf="@+id/btnShow"-->
+<!--            android:text="Hide Spinner" />-->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\n\n\n\nClick Start for processing pictures"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/galleryBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_primary"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_click"
+            android:paddingRight="25dp"
+            android:paddingLeft="15dp"
+            android:text="Start" />
+
+
+
+        <!--        <ProgressBar-->
+<!--            android:id="@+id/pBar"-->
+<!--            style="?android:attr/progressBarStyleLarge"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:visibility="gone"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Back"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_primary"
+                android:drawableLeft="@drawable/ic_previous"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:paddingRight="25dp"
+
+                android:text="Back"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/Next"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/round_primary"
+                android:drawableRight="@drawable/ic_next"
+                android:paddingLeft="10dp"
+                android:paddingRight="25dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="selected pic"></ImageView>
+
+        <ImageView
+            android:id="@+id/getImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></ImageView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""></TextView>
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/wait"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="...Please Wait..."-->
+<!--                    android:textSize="20sp" />-->
+
+                <TextView
+                    android:id="@+id/txtList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="...Please Wait..."
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

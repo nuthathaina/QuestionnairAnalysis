@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elevenzon.image">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app"
+        android:label="Questionnaire Analysis"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity3" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/SplashTheme" /> <!-- <activity android:name=".MainActivity"> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProcessActivity" />
+        <activity android:name=".MainActivity" />
+
+        <!-- First Activity -->
+        <activity
+            android:name=".ImagesActivity"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+        <activity
+            android:name=".FullImageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity android:name=".ActivitySatisfication"></activity>
+        <activity android:name=".ActivityQuestionnaire"></activity>
+        <activity android:name=".ActivityCheckbox"></activity>
+        <activity android:name=".ShowInfo"></activity>
+        <activity android:name=".Home">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Detail"></activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.exportcsv.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
+
