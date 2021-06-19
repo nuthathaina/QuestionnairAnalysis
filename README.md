@@ -69,7 +69,7 @@ classpath 'com.android.tools.build:gradle:4.0.1'
 ```
 in file build.gradle (Project).
 
-thanks to this stack overflow question : https://stackoverflow.com/questions/62678785/android-support-plugin-for-intellij-idea-or-android-studio-cannot-open-this-pr/65326403
+Thanks to this [stack overflow question.](https://stackoverflow.com/questions/62678785/android-support-plugin-for-intellij-idea-or-android-studio-cannot-open-this-pr/65326403)
 
 ## Directory Structure
 ```
