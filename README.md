@@ -7,14 +7,14 @@ Questionnaire Analysis using Image Analysis Application was created to help solv
 Questionnaire Analysis using Image Analysis Application is an app that can make it easier  to fill out and sort data into statistical programs. By the function of this app, it will take a picture of the questionnaire paper and analyzed according to the specified patterns. The data will be exported as a .csv file. and can be automatically applied to the statistical program through the collection of this application. This reduces the time and error of filling in statistical programs   even more.
 
 ## Getting Started
-
-### Prerequisite
+------
+## Prerequisite
 
 * [Install - Android Studio](https://developer.android.com/studio)
 * [Install - Python 3](https://www.python.org/downloads/)
 * [Install - Chaquopy](https://chaquo.com/chaquopy/doc/current/android.html)
 
-### Library
+## Library
 
 Please install library before run the code
 
@@ -28,15 +28,52 @@ pip install opencv-python
 pip install numpy
 ```
 
-### Open Project on Android Studio
-1. Clone repository
-```
-git clone https://github.com/nuthathaina/QuestionnairAnalysis
-```
-2. Open Android Studio and add QuestionnairAnalysis project
-3. Open QuestionnairAnalysis project
+## Open Project on Android Studio
 
-### Directory Structure
+1. Open **Android Studio**
+2. File -> New -> Project from Version Control 
+3. In the Version control - choose **Git** from the drop-down menu.
+4. Copy the **hyperlink** by click on the green button **Code**. 
+
+```
+https://github.com/nuthathaina/QuestionnairAnalysis.git
+```
+5. Paste the link in the URL and choose your Directory. 
+6. Click on the **Clone** button.
+
+
+In some versions of Android Studio a certain error occurs-
+
+**error:package android.support.v4.app does not exist.**
+
+To fix it go to Gradle Scripts -> build.gradle(Module:app) and the add the dependecies:
+```
+dependencies {      
+    compile fileTree(dir: 'libs', include: ['*.jar'])  
+    compile 'com.android.support:appcompat-v7:21.0.3'  
+}
+```
+
+### Problems I encountered at the beginning of the project
+
+**Android Support plugin for IntelliJ IDEA (or Android Studio) cannot open this project**
+
+how to solve it :
+
+
+Change to
+```
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
+```
+in file gradle-wrapper.properties, and then change to
+```
+classpath 'com.android.tools.build:gradle:4.0.1'
+```
+in file build.gradle (Project).
+
+thanks to this stack overflow question : https://stackoverflow.com/questions/62678785/android-support-plugin-for-intellij-idea-or-android-studio-cannot-open-this-pr/65326403
+
+## Directory Structure
 ```
 QuestionnairAnalysis:.
 ├───.gradle
@@ -566,6 +603,6 @@ QuestionnairAnalysis:.
 
 ```
 ### Contact us on
-
-* jks.suphavadee@gmail.com  
+Please feel free to contact us if you have any questions.
 * nuthathaina@gmail.com
+* jks.suphavadee@gmail.com  
