@@ -6,8 +6,6 @@ Questionnaire Analysis using Image Analysis Application was created to help solv
 
 Questionnaire Analysis using Image Analysis Application is an app that can make it easier  to fill out and sort data into statistical programs. By the function of this app, it will take a picture of the questionnaire paper and analyzed according to the specified patterns. The data will be exported as a .csv file. and can be automatically applied to the statistical program through the collection of this application. This reduces the time and error of filling in statistical programs   even more.
 
-## Getting Started
-------
 ## Prerequisite
 
 * [Install - Android Studio](https://developer.android.com/studio)
