@@ -42,9 +42,9 @@ https://github.com/nuthathaina/QuestionnairAnalysis.git
 6. Click on the **Clone** button.
 
 
-In some versions of Android Studio a certain error occurs-
+In some versions of Android Studio a certain error occurs:
 
-**error:package android.support.v4.app does not exist.**
+>error:package android.support.v4.app does not exist.
 
 To fix it go to Gradle Scripts -> build.gradle(Module:app) and the add the dependecies:
 ```
@@ -54,9 +54,9 @@ dependencies {
 }
 ```
 
-### Problems I encountered at the beginning of the project
+### Problems I encountered at the beginning of the project :
 
-**Android Support plugin for IntelliJ IDEA (or Android Studio) cannot open this project**
+>Android Support plugin for IntelliJ IDEA (or Android Studio) cannot open this project
 
 how to solve it :
 
