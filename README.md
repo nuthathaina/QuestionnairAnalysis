@@ -600,7 +600,7 @@ QuestionnairAnalysis:.
             
 
 ```
-### Contact us on
+### Contact us 
 Please feel free to contact us if you have any questions.
 * nuthathaina@gmail.com
 * jks.suphavadee@gmail.com  
