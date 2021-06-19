@@ -597,8 +597,6 @@ QuestionnairAnalysis:.
 │                       └───image
 └───gradle
     └───wrapper
-            
-
 ```
 ### Contact us 
 Please feel free to contact us if you have any questions.
